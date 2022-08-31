@@ -34,7 +34,7 @@ $ nodemon index.js
 * O usuário pode inserir novos comentarios a qualquer Thread ;
 * O usuário pode inserir novas Threads com o botão na home ou o botão na navbar, estes, o direcionaram para o para a página com o form de inserção;
 
-<h1 align="center"> Documentção : </h1>
+<h1 align="center"> Documentação : </h1>
 
 * O sistema foi criado seguindo o padão MVC(Model View Controller);
 * Os 'Models' responsáveis pelo gerenciamento do banco estão localizados no diretório 'database', foi usado o sequelize como ORM para o desenvolvimento com o mysql
