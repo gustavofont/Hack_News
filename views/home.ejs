@@ -3,6 +3,10 @@
     <%- include ('partials/navbar.ejs')%>
     <div class="container">
         <h1>Threads em aberto</h1>
+        <a href="/thread">
+            <button class="btn btn-secondary">Criar nova thread</button>
+        </a>
+        <br>
         <% threads.forEach(thread => {%>
             <br>
             <div class="card">
@@ -11,7 +15,7 @@
                 </div>
                 <div class="card-body">
                     <a href="/thread/<%= thread.id %>">
-                        <button class="btn btn-primary">Responder Thread</button>
+                        <button class="btn btn-secondary">Detalhes</button>
                     </a>
                 </div>
             </div>
