@@ -18,6 +18,7 @@ $ npm install
 $mysql> CREATE DATABASE nome_do_banco;
 
 # Crie um arquivo .env com as segintes variáveis
+$HOST='host_do_mysql-server'
 $DBNAME='nome_do_bando_de_dados'
 $DBUSER='usuário_com_privilégios_ao_DB'
 $DBPASSWORD='senha_do_usuário'
