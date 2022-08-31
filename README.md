@@ -17,7 +17,7 @@ $ npm install
 # Crie um Banco de dados no mysql para o repositorio
 $mysql> CREATE DATABASE nome_do_banco;
 
-# Crie um arquivo .env com as segintes variáveis
+# Crie um arquivo .env com as seguintes variáveis
 $HOST='host_do_mysql-server'
 $DBNAME='nome_do_bando_de_dados'
 $DBUSER='usuário_com_privilégios_ao_DB'
