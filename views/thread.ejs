@@ -1,0 +1,33 @@
+<%- include ('partials/header.ejs');%>
+<body>
+    <%- include ('partials/navbar.ejs')%>
+    <div class="container">
+        <h1><%= thread.title %></h1>
+        <hr>
+        <h3><%= thread.description %></h3>
+        <div class="card">
+            <div class="card-header">
+                <h2>Responda à essa Thread</h2>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/reply/save">
+                    <label for="">Autor</label>
+                    <input type="text" class="form-control" placeholder="Quem está respondendo" name="author">
+                    <label for="">Resposta</label>
+                    <textarea class="form-control" id="" cols="30" rows="10" placeholder="Resposta à Thread" name="reply"></textarea>
+                    <input type="hidden" name="threadId" value="<%= thread.id %>" name="threadId">
+                    <br>
+                    <button class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <h3>Respostas</h3>
+        <hr>
+        <% replies.forEach(reply => {%>
+            <h3><%= reply.body %></h3>
+        <%}) %>
+        
+    </div>
+</body>
+<%- include ('partials/footer.ejs');%>

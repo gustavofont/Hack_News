@@ -1,0 +1,24 @@
+<%- include ('partials/header.ejs'); %>
+<body>
+    <%- include('partials/navbar.ejs'); %>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h3>Iniciar uma nova Thread</h3>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/thread/save">
+                    <label for="">Título</label>
+                    <input type="text" placeholder="Título da Thread" class="form-control" name="title">
+                    <label for="">Descrição</label>
+                    <textarea class="form-control" id="" cols="30" rows="10" placeholder="Descreva a Thread" name="description"></textarea>
+                    <label for="">Autor</label>
+                    <input type="text" placeholder="Seu nome" class="form-control" name="author">
+                    <br>
+                    <button class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include ('partials/footer.ejs'); %>

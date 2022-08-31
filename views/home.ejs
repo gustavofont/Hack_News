@@ -1,0 +1,21 @@
+<%- include ('partials/header.ejs');%>
+<body>
+    <%- include ('partials/navbar.ejs')%>
+    <div class="container">
+        <h1>Threads em aberto</h1>
+        <% threads.forEach(thread => {%>
+            <br>
+            <div class="card">
+                <div class="card-header">
+                    <h3><%= thread.title %></h3>
+                </div>
+                <div class="card-body">
+                    <a href="/thread/<%= thread.id %>">
+                        <button class="btn btn-primary">Responder Thread</button>
+                    </a>
+                </div>
+            </div>
+        <%})%>
+    </div>
+</body>
+<%- include ('partials/footer.ejs');%>
